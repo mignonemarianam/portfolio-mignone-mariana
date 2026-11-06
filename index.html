@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design Process &amp; Success Cases — Proposal C</title>
+<meta name="description" content="UX Product Designer portfolio — design process and success cases by Mariana M. Mignone.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Roboto:wght@300;400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#FAF0E6}
+a{color:#A63054}a:hover{color:#7E2340}
+.pl{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:14px}
+.pl li{padding-left:6px}
+.pl li::marker{color:#A63054}
+.pl-dark li::marker{color:#E7A3B6}
+.btn-behance,.btn-behance:hover,.btn-behance:focus-visible{color:#FFFFFF}
+.btn-behance{background:#A63054;transition:background-color .2s ease,transform .2s ease}
+.btn-behance:hover,.btn-behance:focus-visible{background:#C4567A;transform:translateY(-1px)}
+.pc-root p,.pc-root ul{max-width:800px}
+.pc-root b,.pc-root strong{font-weight:600}
+#case-4 li strong,#case-4 p strong{color:#FAF0E6}
+.pc-root p,.pc-root li,.pc-root span,.pc-root a{text-wrap:pretty}
+.pc-root h1,.pc-root h2,.pc-root h3{text-wrap:balance}
+.type-name,.type-role{display:inline-block;white-space:nowrap;clip-path:inset(0 100% 0 0)}
+.type-name{animation:typeIn 1.1s steps(18,end) .3s forwards}
+.type-role{animation:typeIn 1.3s steps(24,end) 1.6s forwards}
+.type-caret{display:inline-block;width:2px;height:1em;margin-left:3px;background:#A63054;vertical-align:-2px;opacity:0;animation:caretOn 0s 1.6s forwards,blink .8s steps(1) 1.6s 6,caretOff .2s 6.4s forwards}
+@keyframes typeIn{to{clip-path:inset(0 0 0 0)}}
+@keyframes blink{50%{opacity:0}}
+@keyframes caretOn{to{opacity:1}}
+@keyframes caretOff{to{opacity:0}}
+@media (prefers-reduced-motion: reduce){.type-name,.type-role{animation:none;clip-path:none}.type-caret{display:none}}
+</style>
+<style>html{scroll-behavior:smooth}#case-1,#case-2,#case-3,#case-4,#top{scroll-margin-top:72px}</style>
+</head>
+<body>
+<div class="pc-root" style="max-width: 1440px; margin: 0 auto; background: #FAF0E6; color: #1F1F1F; font-family: Roboto, system-ui, sans-serif; font-size: 17px; line-height: 1.65; min-height: 100vh">
+
+<!-- ============ NAV ============ -->
+<header id="site-nav" style="position: sticky; top: 0; z-index: 50; background: #FAF0E6; border-bottom: 1px solid #E3D2C0; transition: transform 0.3s ease; transform: translateY(0)">
+<div style="max-width: 1200px; margin: 0 auto; padding: 20px 32px; display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: center; justify-content: space-between">
+<div style="display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap">
+<span class="type-name" style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 600; color: #1F1F1F">Mariana M. Mignone</span>
+<span style="font-size: 14px; color: #4B3A3F"><span class="type-role">UI/UX · Product Designer</span><span class="type-caret" aria-hidden="true"></span></span>
+</div>
+<nav aria-label="Case studies" style="display: flex; flex-wrap: wrap; gap: 4px 24px; font-size: 14px; font-weight: 500">
+<a href="#case-1" style="color: #2B1219; text-decoration: none; padding: 10px 0">US Customs</a>
+<a href="#case-2" style="color: #2B1219; text-decoration: none; padding: 10px 0">Legal Marketplace</a>
+<a href="#case-3" style="color: #2B1219; text-decoration: none; padding: 10px 0">Pharmacy Monitoring</a>
+<a href="#case-4" style="color: #2B1219; text-decoration: none; padding: 10px 0">Sports Betting</a>
+</nav>
+</div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="top" style="max-width: 1200px; margin: 0 auto; padding: 96px 32px 80px">
+<h1 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(48px, 7vw, 96px); line-height: 1.02; letter-spacing: -0.02em; color: #1F1F1F; max-width: 980px">Design Process <span style="font-style: italic; color: #A63054">&amp;</span> Success Cases</h1>
+
+<p style="margin: 56px 0 0; max-width: 860px; font-size: 21px; line-height: 1.6; font-weight: 300; color: #1F1F1F">Most of my experience is focused on complex products within highly regulated U.S. markets (customs, legal tech, and pharmaceutical IoT). Using a Design Thinking approach, I dive deep into business logic, work closely with engineering, and constantly negotiate with stakeholders to turn strict technical and regulatory constraints into clear, consistent, and intuitive user experiences.</p>
+<p style="margin: 40px 0 0; font-size: 21px; color: #2B1219; font-weight: 400">Below is a breakdown of my design process across three key projects, and an extra one from a different industry:</p>
+<div style="margin-top: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px">
+<a href="#case-1" style="display: flex; flex-direction: column; gap: 12px; padding: 24px; background: #FFF9F2; border: 1px solid #E3D2C0; border-radius: 16px; text-decoration: none; color: #1F1F1F; min-height: 180px"><span style="font-family: 'Playfair Display', serif; font-style: italic; font-size: 40px; line-height: 1; color: #A63054">1.</span><span style="font-family: 'Playfair Display', serif; font-size: 24px; line-height: 1.2; font-weight: 500">US Customs</span><span style="font-size: 14px; line-height: 1.5; color: #4B3A3F">Design System architecture and a rules engine for customs compliance.</span></a>
+<a href="#case-2" style="display: flex; flex-direction: column; gap: 12px; padding: 24px; background: #FFF9F2; border: 1px solid #E3D2C0; border-radius: 16px; text-decoration: none; color: #1F1F1F; min-height: 180px"><span style="font-family: 'Playfair Display', serif; font-style: italic; font-size: 40px; line-height: 1; color: #A63054">2.</span><span style="font-family: 'Playfair Display', serif; font-size: 24px; line-height: 1.2; font-weight: 500">Legal Marketplace</span><span style="font-size: 14px; line-height: 1.5; color: #4B3A3F">Comparison profiles and form friction reduction for lead conversion.</span></a>
+<a href="#case-3" style="display: flex; flex-direction: column; gap: 12px; padding: 24px; background: #FFF9F2; border: 1px solid #E3D2C0; border-radius: 16px; text-decoration: none; color: #1F1F1F; min-height: 180px"><span style="font-family: 'Playfair Display', serif; font-style: italic; font-size: 40px; line-height: 1; color: #A63054">3.</span><span style="font-family: 'Playfair Display', serif; font-size: 24px; line-height: 1.2; font-weight: 500">Pharmacy Monitoring</span><span style="font-size: 14px; line-height: 1.5; color: #4B3A3F">Critical alert management and workflows in regulated IoT environments.</span></a>
+<a href="#case-4" style="display: flex; flex-direction: column; gap: 12px; padding: 24px; background: #2B1219; border: 1px solid #2B1219; border-radius: 16px; text-decoration: none; color: #FAF0E6; min-height: 180px"><span style="font-family: &quot;Playfair Display&quot;, serif; font-style: italic; font-size: 40px; line-height: 1; color: rgb(231, 163, 182)">Extra</span><span style="font-family: &quot;Playfair Display&quot;, serif; font-size: 24px; line-height: 1.2; font-weight: 500">Sports Betting Platform (2023)</span><span style="font-size: 14px; line-height: 1.5; color: rgb(232, 220, 203)">Integration of a high-density extension into an existing platform.</span></a>
+</div>
+<p style="margin: 24px 0 0; font-size: 14px; font-style: italic; color: #4B3A3F">Note: Visuals are limited due to NDAs. Some figures are confidential, so I describe outcomes qualitatively.</p>
+</section>
+
+<!-- =====================================================
+     1 · US CUSTOMS
+====================================================== -->
+
+<!-- =====================================================
+     2 · LEGAL MARKETPLACE
+====================================================== -->
+<section id="case-1" style="border-top: 1px solid #E3D2C0; padding: 96px 0 40px">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 32px; display: flex; flex-wrap: wrap; gap: 40px 64px; align-items: center">
+<div style="flex: 1 1 440px">
+<span style="display: block; font-family: 'Playfair Display', serif; font-style: italic; font-size: 120px; line-height: 0.9; color: #A63054">1.</span>
+<h2 style="margin: 24px 0 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(40px, 5vw, 64px); line-height: 1.05; letter-spacing: -0.01em">US Customs</h2>
+<p style="margin: 24px 0 0; font-size: 19px; line-height: 1.6; font-weight: 300">The platform is a modular web application for a US-based company focused on customs brokerage and global trade compliance software. Each module handles distinct user flows, permissions, and role-based profiles.</p>
+</div>
+<div style="flex: 1 1 440px">
+<img src="images/customs.jpg" alt="Customs brokerage web app open on a desktop monitor in an office overlooking a container port" style="display: block; width: 100%; height: 440px; object-fit: cover; object-position: 55% 24%; border-radius: 24px">
+</div>
+</div>
+
+<!-- 1.1 -->
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 32px 0">
+<div style="display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: baseline">
+<span style="flex: 0 0 auto; font-family: 'Playfair Display', serif; font-style: normal; font-weight: 500; font-size: clamp(30px, 3.4vw, 42px); line-height: 1.15; color: #A63054">1.1</span>
+<h3 style="margin: 0; flex: 999 1 520px; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(30px, 3.4vw, 42px); line-height: 1.15">Building a Scalable Design System for a Modular Web App</h3>
+</div>
+<p style="margin: 16px 0 0; font-size: 18px; color: #4B3A3F">The Design System arose to solve internal handoff challenges with the development team.</p>
+
+<span style="display: block; margin-top: 40px; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #2B1219">Roles &amp; Goals</span>
+<div style="margin-top: 12px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px 40px; padding: 28px 0; border-top: 1px solid #2B1219">
+<div><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A63054; margin-bottom: 8px">Team</span><span style="font-size: 15px; line-height: 1.55">A cross-functional UX team collaborating directly with front-end engineering and business stakeholders.</span></div>
+<div><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A63054; margin-bottom: 8px">My Role</span><span style="font-size: 15px; line-height: 1.55">UX Designer leading branding, color architecture, theming, and accessibility, working alongside peers focused on component libraries and Figma variables.</span></div>
+<div><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A63054; margin-bottom: 8px">Goal</span><span style="font-size: 15px; line-height: 1.55">Fix design and technical debt across the platform, unify the user experience across all modules, and improve developer handoff.</span></div>
+</div><div style="margin-top: 20px; background: #FFF9F2; border: 1px solid #E3D2C0; border-radius: 20px; padding: 24px 20px">
+<span style="display: block; font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 500">At a glance</span>
+<div style="margin-top: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px 40px">
+<div><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A63054; margin-bottom: 8px">Problem</span><span style="font-size: 16px">Over 300 disconnected colors and 5 themes created design debt, constant rework and poor accessibility.</span></div>
+<div><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A63054; margin-bottom: 8px">What I did</span><span style="font-size: 16px">Led color architecture and theming: semantic tokens matched 1:1 with front-end code, only Light and Dark mode.</span></div>
+<div style="border-left: 2px solid #A63054; padding-left: 20px"><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A63054; margin-bottom: 8px">Result</span><span style="font-size: 16px; font-weight: 500">From 300+ colors and 5 themes to 45 tokens meeting WCAG AAA.</span></div>
+</div>
+</div>
+
+<div style="margin-top: 48px; display: flex; flex-direction: column">
+<div style="display: flex; gap: 32px">
+<div style="flex: 0 0 48px; display: flex; flex-direction: column; align-items: center"><span style="width: 48px; height: 48px; border-radius: 999px; border: 1px solid #A63054; color: #A63054; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 20px">1</span><span style="flex: 1; width: 1px; background: #D9C3AE"></span></div>
+<div style="flex: 1; padding: 6px 0 48px; display: flex; flex-wrap: wrap; gap: 12px 48px">
+<span style="flex: 1 1 200px; font-family: 'Playfair Display', serif; font-size: 26px; line-height: 1.2">The Challenge</span>
+<p style="margin: 0; padding-left: 26px; flex: 999 1 480px">As the platform scaled by adding new modules, <strong>development moved forward without UX intervention</strong>. Lacking a unified system, front-end developers had to make quick UI decisions to meet deadlines, creating a lot of design debt. This caused <strong>big visual and functional inconsistencies</strong> that only showed up during client demos. As a result, there was constant rework, extra maintenance costs, frequent "hot fix" Jira tickets, poor accessibility, and a fragmented product that looked unprofessional to clients and stakeholders.</p>
+</div>
+</div>
+<div style="display: flex; gap: 32px">
+<div style="flex: 0 0 48px; display: flex; flex-direction: column; align-items: center"><span style="width: 48px; height: 48px; border-radius: 999px; border: 1px solid #A63054; color: #A63054; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 20px">2</span><span style="flex: 1; width: 1px; background: #D9C3AE"></span></div>
+<div style="flex: 1; padding: 6px 0 48px; display: flex; flex-wrap: wrap; gap: 12px 48px">
+<span style="flex: 1 1 200px; font-family: 'Playfair Display', serif; font-size: 26px; line-height: 1.2">Research &amp; Discovery</span>
+<ul class="pl" style="flex: 999 1 480px">
+<li>We conducted a UI/UX audit of the platform module by module to spot inconsistencies in components and layouts. We also found <strong>over 300 disconnected colors in the code and 5 different themes</strong> (Default, Light, Dark, Easter, and Christmas) that caused visual noise and failed accessibility contrast standards.</li>
+<li>I interviewed developers to understand their daily pain points. I found out they <strong>relied on libraries like Kendo and Material UI</strong> to speed up the development process, but they were&nbsp;overridden making <strong>updates almost impossible to maintain</strong>.</li>
+<li>I met with senior developers and stakeholders to <strong>trace the origin of the seasonal themes and branding deviations</strong>, separating genuine business needs from legacy technical debt.</li>
+</ul>
+</div>
+</div>
+<div style="display: flex; gap: 32px">
+<div style="flex: 0 0 48px; display: flex; flex-direction: column; align-items: center"><span style="width: 48px; height: 48px; border-radius: 999px; background: #A63054; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 20px">3</span><span style="flex: 1; width: 1px; background: #D9C3AE"></span></div>
+<div style="flex: 1; padding: 6px 0 48px; display: flex; flex-wrap: wrap; gap: 12px 48px">
+<span style="flex: 1 1 200px; font-family: 'Playfair Display', serif; font-size: 26px; line-height: 1.2; color: #A63054">Design Decisions &amp; Trade-offs</span>
+<ul class="pl" style="flex: 999 1 480px">
+<li>I showed stakeholders the extra costs and accessibility issues of keeping 5 themes. I <strong>convinced them to remove the holiday themes and keep only Light and Dark mode</strong>, basing the decision on WCAG AAA accessibility standards.</li>
+<li>Instead of asking engineering to rebuild every component from zero (which would stop the delivery of new features), we decided to <strong>build a flexible system that worked on top of their existing Kendo and Material setups</strong>.</li>
+<li>Using Tailwind's 50 to 900 scale as a reference, I defined <strong>structured color palettes</strong> to give variety while staying on-brand. I organized Figma Variables into two levels: <strong>Global (base colors) and Semantic</strong> (functional roles like surface or text).</li>
+<li>We <strong>matched the token names in Figma 1:1 with the front-end code</strong>. This created a <strong>single source of truth</strong>, so design and engineering were finally speaking the exact same language during handoff.</li>
+</ul>
+</div>
+</div>
+<div style="display: flex; gap: 32px">
+<div style="flex: 0 0 48px; display: flex; flex-direction: column; align-items: center"><span style="width: 48px; height: 48px; border-radius: 999px; background: #A63054; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 20px">4</span><span style="flex: 1; width: 1px; background: #D9C3AE"></span></div>
+<div style="flex: 1; padding: 6px 0 48px; display: flex; flex-wrap: wrap; gap: 12px 48px">
+<span style="flex: 1 1 200px; font-family: 'Playfair Display', serif; font-size: 26px; line-height: 1.2; color: #A63054">Iterations</span>
+<ul class="pl" style="flex: 999 1 480px">
+<li>At first, we tried just <strong>organizing the 300+ colors into static groups</strong>. We quickly dropped that idea because changing a theme still broke the UI. We <strong>moved to semantic tokens</strong> (like surface-primary or text-interactive), which let us switch between Light and Dark mode easily without duplicating code.</li>
+<li>Some brand colors <strong>didn't have enough contrast on dark backgrounds</strong>. We tested and <strong>adjusted the middle tones</strong> until we met WCAG AAA standards without losing the brand's identity. Using tokens was key in this process.</li>
+</ul>
+</div>
+</div>
+<div style="display: flex; gap: 32px">
+<div style="flex: 1; min-width: 0; background: #F3E3D3; border-radius: 24px; margin-left: -24px; padding: 40px clamp(20px, 4vw, 48px) 40px 24px">
+<div style="display: flex; align-items: center; gap: 32px"><span style="flex: 0 0 48px; width: 48px; height: 48px; border-radius: 999px; background: #A63054; color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span><h5 style="margin: 0; font-family: 'Playfair Display', serif; font-size: clamp(26px, 2.6vw, 32px); line-height: 1.15; font-weight: 500; color: #A63054">Impact &amp; Metrics</h5></div>
+<div style="margin-top: 24px; margin-left: 80px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px">
+<div style="display: flex; gap: 14px; background: #FFF9F2; border-radius: 16px; padding: 22px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A63054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><path d="M20 6 9 17l-5-5"></path></svg><p style="margin: 0; font-size: 15px; line-height: 1.55"><strong>Huge Reduction in Complexity:</strong> We went from more than 300 colors and 5 themes to just 45 structured tokens for Light and Dark mode.</p></div>
+<div style="display: flex; gap: 14px; background: #FFF9F2; border-radius: 16px; padding: 22px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A63054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><path d="M20 6 9 17l-5-5"></path></svg><p style="margin: 0; font-size: 15px; line-height: 1.55">Significantly <strong>improved accessibility</strong> by reducing the number of auto-generated themes and ensuring both Light and Dark mode meet <strong>WCAG AAA standards.</strong> Having only two clear themes made the platform much easier to use for people with visual impairments.</p></div>
+<div style="display: flex; gap: 14px; background: #FFF9F2; border-radius: 16px; padding: 22px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A63054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><path d="M20 6 9 17l-5-5"></path></svg><p style="margin: 0; font-size: 15px; line-height: 1.55"><span style="font-size: 15px"><span style="font-size: 15px">Front-end code became significantly more <strong>performant</strong> by eliminating duplicate, unused colors and obsolete auto-generated themes, translating into less CSS to maintain.</span></span></p></div>
+<div style="display: flex; gap: 14px; background: #FFF9F2; border-radius: 16px; padding: 22px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A63054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><path d="M20 6 9 17l-5-5"></path></svg><p style="margin: 0; font-size: 15px; line-height: 1.55">The new components ensured <strong>consistency across all modules,</strong> making the web app finally feel like a single, unified product.</p></div>
+<div style="display: flex; gap: 14px; background: #FFF9F2; border-radius: 16px; padding: 22px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A63054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><path d="M20 6 9 17l-5-5"></path></svg><p style="margin: 0; font-size: 15px; line-height: 1.55">We drastically reduced visual inconsistencies during client demos, which lowered the number of "hot fix" Jira tickets and rework on already approved designs, thus <strong>saving time and costs.</strong></p></div>
+<div style="display: flex; gap: 14px; background: #FFF9F2; border-radius: 16px; padding: 22px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A63054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><path d="M20 6 9 17l-5-5"></path></svg><p style="margin: 0; font-size: 15px; line-height: 1.55">Using the same token names in Figma and code meant <strong>design and development finally spoke the same language,</strong> saving developer hours and avoiding misunderstandings.</p></div>
+</div>
+</div>
+</div>
+</div>
+<!-- What I'd do differently (1.1) -->
+<div style="margin-top: 32px; margin-left: -24px; border: 1.5px solid #A63054; border-radius: 24px; padding: 40px clamp(20px, 4vw, 48px) 40px 24px">
+<div style="display: flex; align-items: center; gap: 32px"><span style="flex: 0 0 48px; width: 48px; height: 48px; border-radius: 999px; background: #A63054; color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"></path><path d="M3 4v5h5"></path></svg></span><h5 style="margin: 0; font-family: 'Playfair Display', serif; font-size: clamp(26px, 2.6vw, 32px); line-height: 1.15; font-weight: 500; font-style: italic">What I'd do differently</h5></div>
+<ul class="pl" style="margin-top: 24px; margin-left: 80px; font-size: 17px">
+<li>Due to project constraints, we relied mostly on automated tools and guidelines to meet WCAG AAA standards. While this solved our compliance issues, in a data-dense platform, <strong>I would have liked the opportunity to test these color combinations with real users</strong> in their daily workflows to ensure long-term visual comfort alongside accessibility.</li>
+<li>We noticed right away that the system made the code cleaner and reduced UI issues during demos. However, looking back, <strong>I would track concrete metrics from the very beginning</strong> (such as the exact percentage drop in "hot fix" Jira tickets and rework hours) to give stakeholders clear, measurable proof of the time and money saved.</li>
+</ul>
+</div>
+</div>
+
+<!-- 1.2 -->
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 32px 0">
+<div style="display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: baseline">
+<span style="flex: 0 0 auto; font-family: 'Playfair Display', serif; font-style: normal; font-weight: 500; font-size: clamp(30px, 3.4vw, 42px); line-height: 1.15; color: #A63054">1.2</span>
+<h3 style="margin: 0; flex: 999 1 520px; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(30px, 3.4vw, 42px); line-height: 1.15">Creation of an Admin Feature: Custom Logic &amp; Tax Calculation Builder</h3>
+</div>
+
+<span style="display: block; margin-top: 40px; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #2B1219">Roles &amp; Goals</span>
+<div style="margin-top: 12px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px 40px; padding: 28px 0; border-top: 1px solid #2B1219">
+<div><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A63054; margin-bottom: 8px">Team</span><span style="font-size: 15px; line-height: 1.55">UX team collaborating directly with business stakeholders and front-end developers.</span></div>
+<div><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A63054; margin-bottom: 8px">My Role</span><span style="font-size: 15px; line-height: 1.55">UX Designer leading the user research, workflow logic, and UI design.</span></div>
+<div><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A63054; margin-bottom: 8px">Goal</span><span style="font-size: 15px; line-height: 1.55">Redesign an existing admin tool so administrators could build complex mathematical rules for tax calculations, which customs brokers could then easily select when filling out official forms.</span></div>
+</div><div style="margin-top: 20px; background: #FFF9F2; border: 1px solid #E3D2C0; border-radius: 20px; padding: 24px 20px">
+<span style="display: block; font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 500">At a glance</span>
+<div style="margin-top: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px 40px">
+<div><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A63054; margin-bottom: 8px">Problem</span><span style="font-size: 16px">Admins built nested tax rules in a tool that felt like writing raw code; mistakes exposed clients to fines.</span></div>
+<div><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A63054; margin-bottom: 8px">What I did</span><span style="font-size: 16px">Led research and workflow logic; translated formulas into a card-based model built on existing Design System patterns.</span></div>
+<div style="border-left: 2px solid #A63054; padding-left: 20px"><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A63054; margin-bottom: 8px">Result</span><span style="font-size: 16px; font-weight: 500">Admins build and edit nested logic without technical training or developer assistance.</span></div>
+</div>
+</div>
+
+<div style="margin-top: 48px; display: flex; flex-direction: column">
+<div style="display: flex; gap: 32px">
+<div style="flex: 0 0 48px; display: flex; flex-direction: column; align-items: center"><span style="width: 48px; height: 48px; border-radius: 999px; border: 1px solid #A63054; color: #A63054; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 20px">1</span><span style="flex: 1; width: 1px; background: #D9C3AE"></span></div>
+<div style="flex: 1; padding: 6px 0 48px; display: flex; flex-wrap: wrap; gap: 12px 48px">
+<span style="flex: 1 1 200px; font-family: 'Playfair Display', serif; font-size: 26px; line-height: 1.2">The Challenge</span>
+<p style="margin: 0; padding-left: 26px; flex: 999 1 480px">Customs regulations change frequently, and calculations depend on nested business logic that can go up to three levels deep. The existing solution was built with Kendo for Angular and <strong>felt like writing raw code</strong>. Even experienced administrators struggled to use it and needed constant technical assistance. If an admin made a mistake in the logic or overlapping rules, <strong>brokers would calculate taxes incorrectly</strong>, exposing clients to operational risks, severe customs penalties, and financial fines.</p>
+</div>
+</div>
+<div style="display: flex; gap: 32px">
+<div style="flex: 0 0 48px; display: flex; flex-direction: column; align-items: center"><span style="width: 48px; height: 48px; border-radius: 999px; border: 1px solid #A63054; color: #A63054; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 20px">2</span><span style="flex: 1; width: 1px; background: #D9C3AE"></span></div>
+<div style="flex: 1; padding: 6px 0 48px; display: flex; flex-wrap: wrap; gap: 12px 48px">
+<span style="flex: 1 1 200px; font-family: 'Playfair Display', serif; font-size: 26px; line-height: 1.2">Research &amp; Discovery</span>
+<ul class="pl" style="flex: 999 1 480px">
+<li>To understand the user pain points, the UX team tested the feature directly in a staging environment. We quickly realized that without expert guidance, <strong>even we could not figure out how to build a function</strong>.</li>
+<li>I led several <strong>discovery sessions with key stakeholders</strong> to break down the business rules, the equations, and their limitations.</li>
+<li>I <strong>mapped the workflow from two angles</strong>: how administrators configure the logic, and how customs brokers consume those formulas in daily cross-border forms.</li>
+</ul>
+</div>
+</div>
+<div style="display: flex; gap: 32px">
+<div style="flex: 0 0 48px; display: flex; flex-direction: column; align-items: center"><span style="width: 48px; height: 48px; border-radius: 999px; background: #A63054; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 20px">3</span><span style="flex: 1; width: 1px; background: #D9C3AE"></span></div>
+<div style="flex: 1; padding: 6px 0 48px; display: flex; flex-wrap: wrap; gap: 12px 48px">
+<span style="flex: 1 1 200px; font-family: 'Playfair Display', serif; font-size: 26px; line-height: 1.2; color: #A63054">Design Decisions &amp; Trade-offs</span>
+<ul class="pl" style="flex: 999 1 480px">
+<li>We avoided introducing brand-new components and instead <strong>reused patterns from our Design System and Kendo</strong>, ensuring developers could implement the feature quickly without building everything from scratch.</li>
+<li>We discarded the code-like interface and translated the mathematical formulas into a <strong>visual card-based mental model</strong> (which is consistent with the rest of the platform)</li>
+<li><strong>Each card represents a clear rule</strong> containing two connected inputs. Clicking an action button adds another rule to the formula, and admins can simply <strong>drag and drop cards</strong> to reorder and nest the calculation hierarchy.</li>
+<li>We added a <strong>clear naming step</strong> at the end so administrators could save formulas with recognizable, human-friendly labels for brokers.</li>
+</ul>
+</div>
+</div>
+<div style="display: flex; gap: 32px">
+<div style="flex: 0 0 48px; display: flex; flex-direction: column; align-items: center"><span style="width: 48px; height: 48px; border-radius: 999px; background: #A63054; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 20px">4</span><span style="flex: 1; width: 1px; background: #D9C3AE"></span></div>
+<div style="flex: 1; padding: 6px 0 48px; display: flex; flex-wrap: wrap; gap: 12px 48px">
+<span style="flex: 1 1 200px; font-family: 'Playfair Display', serif; font-size: 26px; line-height: 1.2; color: #A63054">Iterations</span>
+<ul class="pl" style="flex: 999 1 480px">
+<li>Our initial idea relied on a <strong>multi-step modal wizard</strong>. We discarded it because admins needed to <strong>see the entire equation</strong> and its dependencies at a glance without losing context between steps.</li>
+<li>We included <strong>error states directly in the cards</strong> to alert admins immediately if two rules contradicted each other before saving.</li>
+</ul>
+</div>
+</div>
+<div style="display: flex; gap: 32px">
+<div style="flex: 1; min-width: 0; background: #F3E3D3; border-radius: 24px; margin-left: -24px; padding: 40px clamp(20px, 4vw, 48px) 40px 24px">
+<div style="display: flex; align-items: center; gap: 32px"><span style="flex: 0 0 48px; width: 48px; height: 48px; border-radius: 999px; background: #A63054; color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span><h5 style="margin: 0; font-family: 'Playfair Display', serif; font-size: clamp(26px, 2.6vw, 32px); line-height: 1.15; font-weight: 500; color: #A63054">Impact &amp; Metrics</h5></div>
+<div style="margin-top: 24px; margin-left: 80px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px">
+<div style="display: flex; gap: 14px; background: #FFF9F2; border-radius: 16px; padding: 22px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A63054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><path d="M20 6 9 17l-5-5"></path></svg><p style="margin: 0; font-size: 15px; line-height: 1.55">Administrators can now build and edit nested logic <strong>without technical training or developer assistance.</strong></p></div>
+<div style="display: flex; gap: 14px; background: #FFF9F2; border-radius: 16px; padding: 22px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A63054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><path d="M20 6 9 17l-5-5"></path></svg><p style="margin: 0; font-size: 15px; line-height: 1.55">Customs brokers can select pre-built rules confidently, <strong>filling out forms faster.</strong></p></div>
+<div style="display: flex; gap: 14px; background: #FFF9F2; border-radius: 16px; padding: 22px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A63054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><path d="M20 6 9 17l-5-5"></path></svg><p style="margin: 0; font-size: 15px; line-height: 1.55">Significantly <strong>reduced operational and compliance risks,</strong> helping prevent costly regulatory fines.</p></div>
+<div style="display: flex; gap: 14px; background: #FFF9F2; border-radius: 16px; padding: 22px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A63054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><path d="M20 6 9 17l-5-5"></path></svg><p style="margin: 0; font-size: 15px; line-height: 1.55">Continuous alignment with engineering meant <strong>the feature integrated smoothly</strong> into the platform without complex and custom component rework.</p></div>
+</div>
+</div>
+</div>
+</div>
+<!-- What I'd do differently -->
+<div style="margin-top: 32px; margin-left: -24px; border: 1.5px solid #A63054; border-radius: 24px; padding: 40px clamp(20px, 4vw, 48px) 40px 24px">
+<div style="display: flex; align-items: center; gap: 32px"><span style="flex: 0 0 48px; width: 48px; height: 48px; border-radius: 999px; background: #A63054; color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"></path><path d="M3 4v5h5"></path></svg></span><h5 style="margin: 0; font-family: 'Playfair Display', serif; font-size: clamp(26px, 2.6vw, 32px); line-height: 1.15; font-weight: 500; font-style: italic">What I'd do differently</h5></div>
+<p style="margin: 24px 0 0 80px; font-size: 17px">While we added instant error states to prevent contradictions between rules, tax calculations can be very intricate. Looking back, <strong>I would have loved to add a "test run" or preview tool</strong> where administrators could input sample values to verify the final calculation before publishing the rule to brokers.</p>
+</div>
+<a class="btn-behance" href="#top" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; margin-top: 32px; padding: 0 22px; border-radius: 999px; font-size: 15px; font-weight: 500; text-decoration: none"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"></path><path d="m5 12 7-7 7 7"></path></svg><span>Back to top</span></a>
+</div>
+</section><section id="case-2" style="margin-top: 96px; border-top: 1px solid #E3D2C0; padding: 96px 0 40px">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 32px; display: flex; flex-wrap: wrap; gap: 40px 64px; align-items: center">
+<div style="flex: 1 1 440px">
+<span style="display: block; font-family: 'Playfair Display', serif; font-style: italic; font-size: 120px; line-height: 0.9; color: #A63054">2.</span>
+<h2 style="margin: 24px 0 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(40px, 5vw, 64px); line-height: 1.05; letter-spacing: -0.01em">Legal Marketplace</h2>
+<p style="margin: 24px 0 0; font-size: 19px; line-height: 1.6; font-weight: 300">The product is a legal marketplace web platform connecting clients with specialized U.S. lawyers through a curated matching service run by paralegals.</p>
+</div>
+<div style="flex: 1 1 440px; background: #2B1219; border-radius: 24px; padding: 40px 32px; display: flex; gap: 32px; align-items: center; justify-content: center; flex-wrap: wrap">
+<img src="images/legal-card.png" alt="Lawyer profile card" style="display: block; width: 220px; max-width: 100%; height: auto; border-radius: 16px; box-shadow: 0 20px 50px rgba(0,0,0,0.35)">
+<img src="images/legal-form.jpg" alt="Intake form" style="display: block; width: 200px; max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 20px 50px rgba(0,0,0,0.35)">
+</div>
+</div>
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 64px 32px 0">
+<span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #2B1219">Roles &amp; Goals</span>
+<div style="margin-top: 12px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px 40px; padding: 28px 0; border-top: 1px solid #2B1219">
+<div><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A63054; margin-bottom: 8px">Team</span><span style="font-size: 15px; line-height: 1.55">Working directly with developers, the startup founder, and the lead paralegal.</span></div>
+<div><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A63054; margin-bottom: 8px">My Role</span><span style="font-size: 15px; line-height: 1.55">UX Lead responsible for information architecture, UX writing, layout design, and conversion optimization.</span></div>
+<div><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A63054; margin-bottom: 8px">Goal</span><span style="font-size: 15px; line-height: 1.55">Improve the existing website to build user trust, reduce friction in the intake process, and reach the MVP goal of generating qualified leads.</span></div>
+</div>
+
+<div style="margin-top: 20px; background: #FFF9F2; border: 1px solid #E3D2C0; border-radius: 20px; padding: 24px 20px">
+<span style="display: block; font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 500">At a glance</span>
+<div style="margin-top: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px 40px">
+<div><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A63054; margin-bottom: 8px">Problem</span><span style="font-size: 16px">Users in distress were hesitant to share sensitive legal information with an unknown startup. The MVP wasn't clearly defined.</span></div>
+<div><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A63054; margin-bottom: 8px">What I did</span><span style="font-size: 16px">Along with my team, I defined an MVP, which included calm UX writing, standardized lawyer comparison cards, and a 5-field form leading to conversion.</span></div>
+<div style="border-left: 2px solid #A63054; padding-left: 20px"><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A63054; margin-bottom: 8px">Result</span><span style="font-size: 16px; font-weight: 500">With the MVP defined, the brand hit the goal of getting at least 2 qualified leads every month.</span></div>
+</div>
+</div>
+
+<div style="margin-top: 48px; display: flex; flex-direction: column">
+<div style="display: flex; gap: 32px">
+<div style="flex: 0 0 48px; display: flex; flex-direction: column; align-items: center"><span style="width: 48px; height: 48px; border-radius: 999px; border: 1px solid #A63054; color: #A63054; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 20px">1</span><span style="flex: 1; width: 1px; background: #D9C3AE"></span></div>
+<div style="flex: 1; padding: 6px 0 48px; display: flex; flex-wrap: wrap; gap: 12px 48px">
+<span style="flex: 1 1 200px; font-family: 'Playfair Display', serif; font-size: 26px; line-height: 1.2">The Challenge</span>
+<div style="padding-left: 26px; max-width: 800px; flex: 999 1 480px; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0">Finding a lawyer in the U.S. is stressful, expensive, and overwhelming. Big firms are often unaffordable, while smaller, qualified practices remain invisible to regular people. Because this was an early-stage startup without brand recognition, <strong>users hesitated to share sensitive personal and legal information</strong> on an unfamiliar platform.</p>
+<p style="margin: 0">The challenge was <strong>building immediate credibility</strong>, communicating the value of an assisted match, and guiding distressed users through an intake form without making them feel interrogated, all while <strong>defining and validating an MVP</strong> that hadn't been scoped before work began.</p>
+<p style="margin: 0">When we joined the project, substantial resources had already been poured into building <strong>unused features without testing the core premise</strong>. We had to tackle both challenges in parallel.</p>
+</div>
+</div>
+</div>
+<div style="display: flex; gap: 32px">
+<div style="flex: 0 0 48px; display: flex; flex-direction: column; align-items: center"><span style="width: 48px; height: 48px; border-radius: 999px; border: 1px solid #A63054; color: #A63054; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 20px">2</span><span style="flex: 1; width: 1px; background: #D9C3AE"></span></div>
+<div style="flex: 1; padding: 6px 0 48px; display: flex; flex-wrap: wrap; gap: 12px 48px">
+<span style="flex: 1 1 200px; font-family: 'Playfair Display', serif; font-size: 26px; line-height: 1.2">Research &amp; Discovery</span>
+<ul class="pl" style="flex: 999 1 480px">
+<li>I used <strong>Microsoft Clarity</strong> to see how people used the site. I noticed many users left pages that had <strong>huge walls of text and difficult legal terms</strong>.</li>
+<li>I ran working sessions with the stakeholder and the paralegal to understand <strong>how they evaluate lead quality</strong> and what specific details were strictly necessary to make a successful match.</li>
+<li>I reviewed how users scan content during high-anxiety situations, focusing on reading patterns (<strong>F-shaped scanning</strong>) to prioritize transparency and clarity over dense marketing copy.</li>
+</ul>
+</div>
+</div>
+<div style="display: flex; gap: 32px">
+<div style="flex: 0 0 48px; display: flex; flex-direction: column; align-items: center"><span style="width: 48px; height: 48px; border-radius: 999px; background: #A63054; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 20px">3</span><span style="flex: 1; width: 1px; background: #D9C3AE"></span></div>
+<div style="flex: 1; padding: 6px 0 48px; display: flex; flex-wrap: wrap; gap: 12px 48px">
+<span style="flex: 1 1 200px; font-family: 'Playfair Display', serif; font-size: 26px; line-height: 1.2; color: #A63054">Design Decisions &amp; Trade-offs</span>
+<ul class="pl" style="flex: 999 1 480px">
+<li>I rewrote the text on the main pages, changing cold legal words for <strong>simple, friendly, and calm language</strong> to answer common questions right away.</li>
+<li>I designed <strong>standardized lawyer profile cards</strong> so users could compare attorneys within the same specialty using <strong>identical criteria</strong> (experience, focus area, rates) before making a choice.</li>
+<li>Instead of asking for exhaustive details right away, we balanced lead qualification with low cognitive load by designing a <strong>5-field form</strong>. <strong>Only 3 fields were required</strong> (selection-based inputs with minimal free text), and 2 were optional.</li>
+<li>We implemented a <strong>progressive disclosure strategy</strong>: once users compared lawyers and made an initial selection, they felt a sense of progress that motivated them to finish the quick form.</li>
+</ul>
+</div>
+</div>
+<div style="display: flex; gap: 32px">
+<div style="flex: 0 0 48px; display: flex; flex-direction: column; align-items: center"><span style="width: 48px; height: 48px; border-radius: 999px; background: #A63054; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 20px">4</span><span style="flex: 1; width: 1px; background: #D9C3AE"></span></div>
+<div style="flex: 1; padding: 6px 0 48px; display: flex; flex-wrap: wrap; gap: 12px 48px">
+<span style="flex: 1 1 200px; font-family: 'Playfair Display', serif; font-size: 26px; line-height: 1.2; color: #A63054">Iterations</span>
+<ul class="pl" style="flex: 999 1 480px">
+<li>At first, the team wanted a <strong>long form with lots of open questions</strong> to get as much detail as possible. I showed them that users were leaving the site, and we agreed to cut the questions down to <strong>only 3 essential ones</strong>.</li>
+<li>In the first card designs, we put the <strong>full lawyer bio</strong> on the screen, but it looked crowded and messy. I cut it down to <strong>a few clear tags and key points</strong> so people could compare them side by side.</li>
+<li>I reorganized the page layout to place the <strong>form directly in the header</strong>. That way, once users felt convinced after exploring the page, they knew exactly where to find the form right away without having to navigate to a separate contact page, which was adding unnecessary friction.</li>
+</ul>
+</div>
+</div>
+<div style="display: flex; gap: 32px">
+<div style="flex: 1; min-width: 0; background: #F3E3D3; border-radius: 24px; margin-left: -24px; padding: 40px clamp(20px, 4vw, 48px) 40px 24px">
+<div style="display: flex; align-items: center; gap: 32px"><span style="flex: 0 0 48px; width: 48px; height: 48px; border-radius: 999px; background: #A63054; color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span><h5 style="margin: 0; font-family: 'Playfair Display', serif; font-size: clamp(26px, 2.6vw, 32px); line-height: 1.15; font-weight: 500; color: #A63054">Impact &amp; Metrics</h5></div>
+<div style="margin-top: 24px; margin-left: 80px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px">
+<div style="display: flex; gap: 14px; background: #FFF9F2; border-radius: 16px; padding: 22px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A63054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><path d="M20 6 9 17l-5-5"></path></svg><p style="margin: 0; font-size: 15px; line-height: 1.55"><strong>More people visited and spent time</strong> looking at the lawyer profiles on the site, which we verified with Microsoft Clarity.</p></div>
+<div style="display: flex; gap: 14px; background: #FFF9F2; border-radius: 16px; padding: 22px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A63054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><path d="M20 6 9 17l-5-5"></path></svg><p style="margin: 0; font-size: 15px; line-height: 1.55">The clean layout and simple text helped <strong>users feel safe</strong> to share their legal needs.</p></div>
+<div style="display: flex; gap: 14px; background: #FFF9F2; border-radius: 16px; padding: 22px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A63054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><path d="M20 6 9 17l-5-5"></path></svg><p style="margin: 0; font-size: 15px; line-height: 1.55">The 5-field form was easy to complete and helped the team <strong>hit the MVP goal</strong> of getting at least 2 qualified leads every month.</p></div>
+<div style="display: flex; gap: 14px; background: #FFF9F2; border-radius: 16px; padding: 22px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A63054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><path d="M20 6 9 17l-5-5"></path></svg><p style="margin: 0; font-size: 15px; line-height: 1.55">The paralegal got clean, useful information, making it much <strong>faster to review each case</strong> and introduce the client to the right lawyer.</p></div>
+</div>
+</div>
+</div>
+</div>
+<!-- What I'd do differently -->
+<div style="margin-top: 32px; margin-left: -24px; border: 1.5px solid #A63054; border-radius: 24px; padding: 40px clamp(20px, 4vw, 48px) 40px 24px">
+<div style="display: flex; align-items: center; gap: 32px"><span style="flex: 0 0 48px; width: 48px; height: 48px; border-radius: 999px; background: #A63054; color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"></path><path d="M3 4v5h5"></path></svg></span><h5 style="margin: 0; font-family: 'Playfair Display', serif; font-size: clamp(26px, 2.6vw, 32px); line-height: 1.15; font-weight: 500; font-style: italic">What I'd do differently</h5></div>
+<ul class="pl" style="margin-top: 24px; margin-left: 80px; font-size: 17px">
+<li>While placing the 5-field form in the header reduced friction and hit our conversion goals, <strong>I would have liked to run an A/B test</strong> with a conversational, step-by-step intake. For users in distress, answering one question at a time might feel even safer than seeing all fields at once.</li>
+<li>We put a lot of effort into the intake process to build initial trust. In hindsight, <strong>I would design a detailed confirmation state that sets clear expectations</strong> explaining exactly how the paralegal reviews the case and when the lawyer will reach out. This would have been a good way to keep users calm after submitting sensitive data.</li>
+</ul>
+</div>
+<a class="btn-behance" href="#top" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; margin-top: 32px; padding: 0 22px; border-radius: 999px; font-size: 15px; font-weight: 500; text-decoration: none"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"></path><path d="m5 12 7-7 7 7"></path></svg><span>Back to top</span></a>
+</div>
+</section>
+
+<!-- =====================================================
+     3 · PHARMACY MONITORING
+====================================================== -->
+<section id="case-3" style="margin-top: 96px; border-top: 1px solid #E3D2C0; padding: 96px 0 40px">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 32px; display: flex; flex-wrap: wrap; gap: 40px 64px; align-items: center">
+<div style="flex: 1 1 440px">
+<span style="display: block; font-family: 'Playfair Display', serif; font-style: italic; font-size: 120px; line-height: 0.9; color: #A63054">3.</span>
+<h2 style="margin: 24px 0 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(40px, 5vw, 64px); line-height: 1.05; letter-spacing: -0.01em">Pharmacy Monitoring</h2>
+<p style="margin: 24px 0 0; font-size: 19px; line-height: 1.6; font-weight: 300">The product is a web platform for an IoT company that monitors storage conditions (like temperature and humidity) for 4 of the top 5 pharmaceutical companies in the U.S.</p>
+</div>
+<div style="flex: 1 1 440px; background: #FFFFFF; border: 1px solid #E3D2C0; border-radius: 24px; padding: 40px 32px; display: flex; gap: 24px; align-items: center; justify-content: center; flex-wrap: wrap">
+<img src="images/pharma-sensor.png" alt="IoT sensor" style="display: block; width: 150px; height: 158px; object-fit: cover; object-position: 51.9602% 0%; object-view-box: inset(0% 18.9005% 12.2768% 20.443%)">
+<img src="images/pharma-app.png" alt="Monitoring web app on a laptop and a tablet" style="display: block; width: 292px; max-width: 100%; height: 232px; object-fit: cover; object-position: 17.8215% 0%">
+</div>
+</div>
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 64px 32px 0">
+<span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #2B1219">Roles &amp; Goals</span>
+<div style="margin-top: 12px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px 40px; padding: 28px 0; border-top: 1px solid #2B1219">
+<div><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A63054; margin-bottom: 8px">Team</span><span style="font-size: 15px; line-height: 1.55">Cross-functional team alongside Product Managers, IoT Systems Engineers, AI-assisted Developers, and Regulatory Compliance Specialists.</span></div>
+<div><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A63054; margin-bottom: 8px">My Role</span><span style="font-size: 15px; line-height: 1.55">UX Designer helping redefine&nbsp;the design-to-development workflow and create new handoff artifacts to keep up with an engineering team accelerated by AI tools, working in a strictly regulated environment.</span></div>
+<div><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A63054; margin-bottom: 8px">Goal</span><span style="font-size: 15px; line-height: 1.55">Redesign the alarm and monitoring experience to fix operator fatigue, while updating our design delivery process so developers could iterate rapidly with AI without breaking compliance rules.</span></div>
+</div>
+
+<div style="margin-top: 20px; background: #FFF9F2; border: 1px solid #E3D2C0; border-radius: 20px; padding: 24px 20px">
+<span style="display: block; font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 500">At a glance</span>
+<div style="margin-top: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px 40px">
+<div><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A63054; margin-bottom: 8px">Problem</span><span style="font-size: 16px">Engineering was moving much faster using AI tools, while legacy design handoffs and FDA regulations created bottlenecks. Everything looked urgent for operators, and design couldn't keep pace with the accelerated dev cycle.</span></div>
+<div><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A63054; margin-bottom: 8px">What I did</span><span style="font-size: 16px">Together with my team, I redesigned the design-to-dev workflow and created AI-ready handoff artifacts for faster iterations, alongside clear severity levels and human approval checkpoints for new features.</span></div>
+<div style="border-left: 2px solid #A63054; padding-left: 20px"><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A63054; margin-bottom: 8px">Result</span><strong><span style="font-size: 16px">Faster</span><span style="font-size: 16px">, safer iterations between design and engineering, less compliance errors in audits, and a scalable handoff process that matched the development team's AI speed.</span></strong></div>
+</div>
+</div>
+
+<div style="margin-top: 48px; display: flex; flex-direction: column">
+<div style="display: flex; gap: 32px">
+<div style="flex: 0 0 48px; display: flex; flex-direction: column; align-items: center"><span style="width: 48px; height: 48px; border-radius: 999px; border: 1px solid #A63054; color: #A63054; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 20px">1</span><span style="flex: 1; width: 1px; background: #D9C3AE"></span></div>
+<div style="flex: 1; padding: 6px 0 48px; display: flex; flex-wrap: wrap; gap: 12px 48px">
+<span style="flex: 1 1 200px; font-family: 'Playfair Display', serif; font-size: 26px; line-height: 1.2">The Challenge</span>
+<div style="padding-left: 26px; max-width: 800px; flex: 999 1 480px; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0">In the pharmaceutical industry, rules are <strong>strict legal regulations (like FDA compliance)</strong> where any incident can cost millions of dollars in spoiled medicine or failed audits. The legacy platform was cluttered with raw data and loud alerts, <strong>causing severe "alarm fatigue" for operators</strong>.</p>
+<p style="margin: 0">At the same time, our <strong>engineering team adopted AI tools</strong> and started developing at a much faster pace. Our traditional design handoff could not match that velocity. <strong>We faced a double challenge:</strong> redesigning a critical, zero-error monitoring system while completely <strong>modernizing our design delivery process</strong> so developers could iterate rapidly with AI without breaking compliance.</p>
+</div>
+</div>
+</div>
+<div style="display: flex; gap: 32px">
+<div style="flex: 0 0 48px; display: flex; flex-direction: column; align-items: center"><span style="width: 48px; height: 48px; border-radius: 999px; border: 1px solid #A63054; color: #A63054; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 20px">2</span><span style="flex: 1; width: 1px; background: #D9C3AE"></span></div>
+<div style="flex: 1; padding: 6px 0 48px; display: flex; flex-wrap: wrap; gap: 12px 48px">
+<span style="flex: 1 1 200px; font-family: 'Playfair Display', serif; font-size: 26px; line-height: 1.2">Research &amp; Discovery</span>
+<ul class="pl" style="flex: 999 1 480px">
+<li>I analyzed the legacy alarm screens and discovered that <strong>operators were losing critical time deciphering raw codes</strong>, while our <strong>developers were struggling to translate complex edge cases</strong> into their AI workflows without clear design specifications.</li>
+<li>I met with product managers, compliance specialists, and senior engineers to understand both the <strong>mandatory FDA audit steps</strong> and the exact <strong>bottlenecks our tech team faced</strong> when building features at AI speed.</li>
+<li>My team and I <strong>audited safety standards for industrial alerts</strong>, focusing on plain-language messages and clear visual hierarchy while defining the <strong>exact UI states and handoff format</strong> needed for developers to prompt and code accurately.</li>
+</ul>
+</div>
+</div>
+<div style="display: flex; gap: 32px">
+<div style="flex: 0 0 48px; display: flex; flex-direction: column; align-items: center"><span style="width: 48px; height: 48px; border-radius: 999px; background: #A63054; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 20px">3</span><span style="flex: 1; width: 1px; background: #D9C3AE"></span></div>
+<div style="flex: 1; padding: 6px 0 48px; display: flex; flex-wrap: wrap; gap: 12px 48px">
+<span style="flex: 1 1 200px; font-family: 'Playfair Display', serif; font-size: 26px; line-height: 1.2; color: #A63054">Design Decisions &amp; Trade-offs</span>
+<ul class="pl" style="flex: 999 1 480px">
+<li>I redesigned the alert system with <strong>standardized severity levels (Critical, Warning, Info)</strong> and clear visual hierarchy, turning them into <strong>modular UI components</strong> so developers could quickly implement consistent alarm patterns.</li>
+<li>My team and I replaced fragmented error modals with a <strong>guided step-by-step resolution panel</strong>, which helped operators follow mandatory FDA protocols while giving developers unambiguous state definitions for their automated workflows.</li>
+<li>We prioritized a <strong>high-level facility overview over complex live charts</strong> on the main view, reducing cognitive overload for operators and allowing developers to load heavy IoT sensor data asynchronously without hurting performance.</li>
+<li>When introducing AI-assisted features, I designed <strong>mandatory human-in-the-loop approval checkpoints</strong> instead of full automation to guarantee compliance, delivering detailed edge-case specs so our engineers could ship these safety flows rapidly.</li>
+</ul>
+</div>
+</div>
+<div style="display: flex; gap: 32px">
+<div style="flex: 0 0 48px; display: flex; flex-direction: column; align-items: center"><span style="width: 48px; height: 48px; border-radius: 999px; background: #A63054; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 20px">4</span><span style="flex: 1; width: 1px; background: #D9C3AE"></span></div>
+<div style="flex: 1; padding: 6px 0 48px; display: flex; flex-wrap: wrap; gap: 12px 48px">
+<span style="flex: 1 1 200px; font-family: 'Playfair Display', serif; font-size: 26px; line-height: 1.2; color: #A63054">Iterations</span>
+<ul class="pl" style="flex: 999 1 480px">
+<li>At first, we tried <strong>displaying all live sensor graphs on the primary view</strong>, but user testing showed operators were quickly overwhelmed during real emergencies, so we replaced it with a <strong>prioritized facility board</strong> that only flags units requiring immediate action.</li>
+<li>In early versions of the alert modal, <strong>deep technical sensor details</strong> were included, but after testing how developers were consuming the components and how users reacted under stress, I split the interface into a prominent <strong>"immediate action" container and an expandable drawer</strong> for secondary logs.</li>
+<li>My team and I initially explored a <strong>simple one-click button to dismiss alarms</strong>, but compliance reviews showed this created <strong>serious audit liability</strong>, so we iterated toward an <strong>explicit note and confirmation requirement</strong> that fit right into engineering's automated validation checks.</li>
+</ul>
+</div>
+</div>
+<div style="display: flex; gap: 32px">
+<div style="flex: 1; min-width: 0; background: #F3E3D3; border-radius: 24px; margin-left: -24px; padding: 40px clamp(20px, 4vw, 48px) 40px 24px">
+<div style="display: flex; align-items: center; gap: 32px"><span style="flex: 0 0 48px; width: 48px; height: 48px; border-radius: 999px; background: #A63054; color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span><h5 style="margin: 0; font-family: 'Playfair Display', serif; font-size: clamp(26px, 2.6vw, 32px); line-height: 1.15; font-weight: 500; color: #A63054">Impact &amp; Metrics</h5></div>
+<div style="margin-top: 24px; margin-left: 80px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px">
+<div style="display: flex; gap: 14px; background: #FFF9F2; border-radius: 16px; padding: 22px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A63054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><path d="M20 6 9 17l-5-5"></path></svg><p style="margin: 0; font-size: 15px; line-height: 1.55">Operators can now <strong>identify critical alerts much faster,</strong> cutting down response time during sensitive temperature incidents.</p></div>
+<div style="display: flex; gap: 14px; background: #FFF9F2; border-radius: 16px; padding: 22px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A63054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><path d="M20 6 9 17l-5-5"></path></svg><p style="margin: 0; font-size: 15px; line-height: 1.55">The guided action workflow <strong>reduced human errors</strong> when logging incident resolutions, helping meet strict audit requirements.</p></div>
+<div style="display: flex; gap: 14px; background: #FFF9F2; border-radius: 16px; padding: 22px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A63054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><path d="M20 6 9 17l-5-5"></path></svg><p style="margin: 0; font-size: 15px; line-height: 1.55">The cleaner interface eliminated visual clutter and alarm fatigue, giving operators <strong>confidence during daily monitoring.</strong></p></div>
+<div style="display: flex; gap: 14px; background: #FFF9F2; border-radius: 16px; padding: 22px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A63054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><path d="M20 6 9 17l-5-5"></path></svg><p style="margin: 0; font-size: 15px; line-height: 1.55"><span style="font-size: 15px">The new handoff artifacts and modular component specs allowed our AI-accelerated developers to build and deploy complex compliance screens <strong>without implementation bottlenecks.</strong></span></p></div><div style="display: flex; gap: 14px; background: #FFF9F2; border-radius: 16px; padding: 22px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A63054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><path d="M20 6 9 17l-5-5"></path></svg><p style="margin: 0; font-size: 15px; line-height: 1.55">The development team had a clear, <strong>modern framework to replace the legacy screens</strong> smoothly.</p></div>
+</div>
+</div>
+</div>
+</div>
+<!-- What I'd do differently -->
+<div style="margin-top: 32px; margin-left: -24px; border: 1.5px solid #A63054; border-radius: 24px; padding: 40px clamp(20px, 4vw, 48px) 40px 24px">
+<div style="display: flex; align-items: center; gap: 32px"><span style="flex: 0 0 48px; width: 48px; height: 48px; border-radius: 999px; background: #A63054; color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"></path><path d="M3 4v5h5"></path></svg></span><h5 style="margin: 0; font-family: 'Playfair Display', serif; font-size: clamp(26px, 2.6vw, 32px); line-height: 1.15; font-weight: 500; font-style: italic">What I'd do differently</h5></div>
+<p style="margin: 24px 0 0 80px; font-size: 17px">If I had to do this project again, <strong>I would set up shared design tokens from day one</strong> and bring developers into the design file much earlier. At the beginning, we lost time manually explaining colors, states, and spacing while their AI tools were already writing code. Having those tokens connected directly to their codebase and working together on early wireframes would have saved a lot of back-and-forth and helped us catch complex compliance rules even faster.</p>
+</div>
+<a class="btn-behance" href="#top" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; margin-top: 32px; padding: 0 22px; border-radius: 999px; font-size: 15px; font-weight: 500; text-decoration: none"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"></path><path d="m5 12 7-7 7 7"></path></svg><span>Back to top</span></a>
+</div>
+</section>
+
+<!-- =====================================================
+     EXTRA · SPORTS BETTING (dark, full-bleed)
+====================================================== -->
+<section id="case-4" style="display: block; width: 100%; box-sizing: border-box; margin: 120px 0 0; background: #2B1219; box-shadow: 0 0 0 100vmax #2B1219; clip-path: inset(0 -100vmax); color: #FAF0E6; padding: 104px 0 112px">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 32px; display: flex; flex-wrap: wrap; gap: 40px 64px; align-items: center">
+<div style="flex: 1 1 440px">
+<span style="display: block; font-family: 'Playfair Display', serif; font-style: italic; font-size: 96px; line-height: 0.9; color: #E7A3B6">Extra</span>
+<h2 style="margin: 24px 0 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 52px); line-height: 1.08; letter-spacing: -0.01em">Sports Betting Platform: Simplifying High-Density Interfaces (2023)</h2>
+<p style="margin: 24px 0 0; font-size: 19px; line-height: 1.6; font-weight: 300">The product is a responsive web and mobile sportsbook extension integrated into an existing online gaming platform from Brazil.</p>
+<a class="btn-behance" href="https://www.behance.net/gallery/251021643/Simplifying-High-Density-Information-Design" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; margin-top: 24px; padding: 0 22px; border-radius: 999px; font-size: 15px; font-weight: 500; text-decoration: none"><span>View on Behance</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></a>
+</div>
+<div style="flex: 1 1 440px">
+<img src="images/betting.jpg" alt="Sportsbook interface on a laptop and a phone" style="display: block; width: 100%; height: 440px; object-fit: cover; object-position: 50% 70%; border-radius: 24px">
+</div>
+</div>
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 64px 32px 0">
+<span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #E8DCCB">Roles &amp; Goals</span>
+<div style="margin-top: 12px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px 40px; padding: 28px 0; border-top: 1px solid #FAF0E6">
+<div><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #E7A3B6; margin-bottom: 8px">Team</span><span style="font-size: 15px; line-height: 1.55">Working with front-end developers, product managers, and gaming business stakeholders.</span></div>
+<div><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #E7A3B6; margin-bottom: 8px">My Role</span><span style="font-size: 15px; line-height: 1.55">Lead UX/UI Designer responsible for the design strategy, rebranding, information architecture, and component library.</span></div>
+<div><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #E7A3B6; margin-bottom: 8px">Goal</span><span style="font-size: 15px; line-height: 1.55">Launch a dedicated sports betting section that stands out with its own strong visual identity to capture market share quickly, while making complex real-time data clear and accessible.</span></div>
+</div>
+
+<div style="margin-top: 20px; background: #3A1A24; border: 1px solid #5A3440; border-radius: 20px; padding: 24px 20px">
+<span style="display: block; font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 500">At a glance</span>
+<div style="margin-top: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px 40px">
+<div><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #E7A3B6; margin-bottom: 8px">Problem</span><span style="font-size: 16px; color: #F3E8DA">A huge catalog of live data had to fit inside an existing gaming platform without overload.</span></div>
+<div><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #E7A3B6; margin-bottom: 8px">What I did</span><span style="font-size: 16px; color: #F3E8DA">Led the rebranding, information architecture and a state-driven Bet Slip component.</span></div>
+<div style="border-left: 2px solid #E7A3B6; padding-left: 20px"><span style="display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #E7A3B6; margin-bottom: 8px">Result</span><span style="font-size: 16px; font-weight: 500">Integrated without disrupting the core experience, plus a reusable component library.</span></div>
+</div>
+</div>
+
+<div style="margin-top: 48px; display: flex; flex-direction: column">
+<div style="display: flex; gap: 32px">
+<div style="flex: 0 0 48px; display: flex; flex-direction: column; align-items: center"><span style="width: 48px; height: 48px; border-radius: 999px; border: 1px solid #E7A3B6; color: #E7A3B6; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 20px">1</span><span style="flex: 1; width: 1px; background: #5A3440"></span></div>
+<div style="flex: 1; padding: 6px 0 48px; display: flex; flex-wrap: wrap; gap: 12px 48px">
+<span style="flex: 1 1 200px; font-family: 'Playfair Display', serif; font-size: 26px; line-height: 1.2">The Challenge</span>
+<p style="margin: 0; padding-left: 26px; flex: 999 1 480px; color: #F3E8DA">Sports betting platforms are usually overwhelming. They saturate users with flashing numbers, complex odds, and chaotic live updates. We had two main problems: first, this was not a brand-new standalone app; it was a <strong>vertical extension</strong> that needed to exist inside an existing gaming ecosystem without confusing current players and ensuring users could transition between the main platform and the new one without friction. Second, we needed to show a <strong>huge catalog of live matches and betting options</strong> without causing visual fatigue or cognitive overload for the user.</p>
+</div>
+</div>
+<div style="display: flex; gap: 32px">
+<div style="flex: 0 0 48px; display: flex; flex-direction: column; align-items: center"><span style="width: 48px; height: 48px; border-radius: 999px; border: 1px solid #E7A3B6; color: #E7A3B6; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 20px">2</span><span style="flex: 1; width: 1px; background: #5A3440"></span></div>
+<div style="flex: 1; padding: 6px 0 48px; display: flex; flex-wrap: wrap; gap: 12px 48px">
+<span style="flex: 1 1 200px; font-family: 'Playfair Display', serif; font-size: 26px; line-height: 1.2">Research &amp; Discovery</span>
+<ul class="pl pl-dark" style="flex: 999 1 480px; color: #F3E8DA">
+<li>I mapped the biggest source of user frustration and anxiety: <strong>uncertainty around the bet slip</strong> (users frequently wonder <em>"What did I bet on?", "How is my live bet doing?", "Why did I lose a multi-bet?"</em>).</li>
+<li>I studied <strong>how users scan sports screens under time pressure</strong> to prioritize key live information over secondary league menus.</li>
+</ul>
+</div>
+</div>
+<div style="display: flex; gap: 32px">
+<div style="flex: 0 0 48px; display: flex; flex-direction: column; align-items: center"><span style="width: 48px; height: 48px; border-radius: 999px; background: #E7A3B6; color: #2B1219; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 20px">3</span><span style="flex: 1; width: 1px; background: #5A3440"></span></div>
+<div style="flex: 1; padding: 6px 0 48px; display: flex; flex-wrap: wrap; gap: 12px 48px">
+<span style="flex: 1 1 200px; font-family: 'Playfair Display', serif; font-size: 26px; line-height: 1.2; color: #E7A3B6">Design Decisions &amp; Trade-offs</span>
+<ul class="pl pl-dark" style="flex: 999 1 480px; color: #F3E8DA">
+<li>I redesigned the visual identity, moving away from a flat black-and-yellow scheme to a <strong>deep purple foundation with high-contrast electric lime accents</strong>. This created clear visual depth between cards, menus, and tables while meeting strict accessibility contrast standards.</li>
+<li>I restructured the mobile layout with <strong>quick-access sports icons, filter bars, and collapsible league accordions</strong> so users could find their games fast without infinite scrolling.</li>
+<li>Introduced a <strong>pinning and favorites feature</strong> so users could pin their preferred leagues and teams directly to the top bar, <strong>cutting down navigation time</strong> for live events.</li>
+<li>I designed a brand new, dynamic, <strong>state-driven Bet Slip and Bet History component</strong> to eliminate user confusion. It keeps ticket IDs, dates, and amounts in fixed positions, and uses <strong>explicit color-coding</strong> (green checkmarks for wins, red crosses for losses) to provide immediate feedback, enabling users to understand their single and multi-bets effortlessly while building trust during live decision-making.</li>
+<li>Designed subtle <strong>micro-animations for fluctuating odds</strong> (green flash for increases, red for drops). This helped users instantly notice market movements without relying on intrusive popups or screen noise.</li>
+<li>For multiple bets, <strong>the slip expands to show every individual part</strong>, showing users clearly which specific game decided the payout.</li>
+
+</ul>
+</div>
+</div>
+<div style="display: flex; gap: 32px">
+<div style="flex: 0 0 48px; display: flex; flex-direction: column; align-items: center"><span style="width: 48px; height: 48px; border-radius: 999px; background: #E7A3B6; color: #2B1219; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 20px">4</span><span style="flex: 1; width: 1px; background: #5A3440"></span></div>
+<div style="flex: 1; padding: 6px 0 48px; display: flex; flex-wrap: wrap; gap: 12px 48px">
+<span style="flex: 1 1 200px; font-family: 'Playfair Display', serif; font-size: 26px; line-height: 1.2; color: #E7A3B6">Iterations</span>
+<ul class="pl pl-dark" style="flex: 999 1 480px; color: #F3E8DA">
+<li>At first, we tried keeping <strong>all active sports and live games expanded</strong> on the main feed. It quickly created visual clutter, so we introduced <strong>collapsible grouping by region and popularity</strong>, keeping the primary focus strictly on live events.</li>
+<li>The <strong>electric lime accent</strong> was initially used in too many places, which distracted the eye. We restricted it <strong>exclusively to live, active states</strong>, and critical updates to prevent visual strain.</li>
+</ul>
+</div>
+</div>
+<div style="display: flex; gap: 32px">
+<div style="flex: 1; min-width: 0; background: #1F0D13; border: 1px solid #5A3440; border-radius: 24px; margin-left: -24px; padding: 40px clamp(20px, 4vw, 48px) 40px 24px">
+<div style="display: flex; align-items: center; gap: 32px"><span style="flex: 0 0 48px; width: 48px; height: 48px; border-radius: 999px; background: #E7A3B6; color: #2B1219; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span><h5 style="margin: 0; font-family: 'Playfair Display', serif; font-size: clamp(26px, 2.6vw, 32px); line-height: 1.15; font-weight: 500; color: #E7A3B6">Impact &amp; Metrics</h5></div>
+<div style="margin-top: 24px; margin-left: 80px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px">
+<div style="display: flex; gap: 14px; background: #3A1A24; border-radius: 16px; padding: 22px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E7A3B6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><path d="M20 6 9 17l-5-5"></path></svg><p style="margin: 0; font-size: 15px; line-height: 1.55; color: #F3E8DA">Successfully <strong>integrated a complex sportsbook into the existing gaming platform</strong> without disrupting the core user experience.</p></div>
+<div style="display: flex; gap: 14px; background: #3A1A24; border-radius: 16px; padding: 22px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E7A3B6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><path d="M20 6 9 17l-5-5"></path></svg><p style="margin: 0; font-size: 15px; line-height: 1.55; color: #F3E8DA">The state-driven bet slip eliminated confusion and <strong>built user trust by providing clear, transparent feedback</strong> for both single and accumulator bets.</p></div>
+<div style="display: flex; gap: 14px; background: #3A1A24; border-radius: 16px; padding: 22px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E7A3B6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><path d="M20 6 9 17l-5-5"></path></svg><p style="margin: 0; font-size: 15px; line-height: 1.55; color: #F3E8DA">The high-contrast palette gave the brand a <strong>strong personality</strong> and helped it <strong>stand out</strong> immediately from other betting sites.</p></div>
+<div style="display: flex; gap: 14px; background: #3A1A24; border-radius: 16px; padding: 22px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E7A3B6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><path d="M20 6 9 17l-5-5"></path></svg><p style="margin: 0; font-size: 15px; line-height: 1.55; color: #F3E8DA">The new, balanced palette also <strong>reduced&nbsp;cognitive load and visual fatigue</strong> during live betting sessions, where numbers and odds change in fractions of a second.</p></div>
+<div style="display: flex; gap: 14px; background: #3A1A24; border-radius: 16px; padding: 22px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E7A3B6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><path d="M20 6 9 17l-5-5"></path></svg><p style="margin: 0; font-size: 15px; line-height: 1.55; color: #F3E8DA">Delivered a future-proof, scalable <strong>component library that developers could reuse</strong> easily as the sportsbook catalog expanded.</p></div>
+</div>
+</div>
+</div>
+</div>
+<!-- What I'd do differently -->
+<div style="margin-top: 32px; margin-left: -24px; border: 1.5px solid #A63054; border-radius: 24px; padding: 40px clamp(20px, 4vw, 48px) 40px 24px">
+<div style="display: flex; align-items: center; gap: 32px"><span style="flex: 0 0 48px; width: 48px; height: 48px; border-radius: 999px; background: #A63054; color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"></path><path d="M3 4v5h5"></path></svg></span><h5 style="margin: 0; font-family: 'Playfair Display', serif; font-size: clamp(26px, 2.6vw, 32px); line-height: 1.15; font-weight: 500; font-style: italic">What I'd do differently</h5></div>
+<ul class="pl" style="margin-top: 24px; margin-left: 80px; font-size: 17px">
+<li>While we validated usability during our design phase, betting platforms have complex live interactions with rapid screen updates. Looking back, <strong>I would integrate behavioral tools immediately upon launch</strong> to observe where users experience drop-offs or rage clicks during high-traffic live matches.</li>
+<li>We organized the catalog using quick-access icons and collapsible leagues. In hindsight, <strong>I would have explored multi-league filters earlier</strong>, allowing users who bet on multiple competitions at the same time to see combined live games without switching back and forth between sports.</li>
+</ul>
+</div>
+<a class="btn-behance" href="#top" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; margin-top: 32px; padding: 0 22px; border-radius: 999px; font-size: 15px; font-weight: 500; text-decoration: none"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"></path><path d="m5 12 7-7 7 7"></path></svg><span>Back to top</span></a>
+</div>
+</section>
+
+</div>
+<script>
+(function(){var nav=document.getElementById('site-nav');var last=window.scrollY;
+window.addEventListener('scroll',function(){var y=window.scrollY,d=y-last;if(Math.abs(d)<6)return;
+nav.style.transform=(d>0&&y>120)?'translateY(-100%)':'translateY(0)';last=y;},{passive:true});})();
+</script>
+</body>
+</html>
